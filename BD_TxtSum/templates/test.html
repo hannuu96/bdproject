@@ -1,0 +1,15 @@
+<br>
+<br>
+
+<form method='POST' enctype='multipart/form-data' action="{{url_for('upload_done')}}">
+<!-- action속성은 보내고 싶은 곳을 입력. upload_done으로 url을 보내겠다.-->
+    <input type='file' name='file'/>
+    <!--
+    <textarea name='stt_text' placeholder='test용 요약할 문서 올릴때' cols='45' required></textarea>
+    -->
+    <input type='submit'/>
+</form>
+
+<p1>{{stt_text}}</p1> <br>
+<p1> </p1>
+<p1>{{summ_text}}</p1>
